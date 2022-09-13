@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+  <!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://test1.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+<meta name="theme-color" content="#f5aab9"><meta name="generator" content="Hexo 6.3.0">
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/web/avatar/web_ico_runa.ico">
@@ -16,7 +18,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"sakura-kouji-runa.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"sakura-kouji-runa.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","width":330,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="(*￣3￣)╭">
 <meta property="og:type" content="website">
@@ -70,7 +72,6 @@
       <h1 class="site-title">slchy_cyberspace</h1>
       <i class="logo-line"></i>
     </a>
-      <img class="custom-logo-image" src="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/web/avatar/avatar_runa.png" alt="slchy_cyberspace">
   </div>
 
   <div class="site-nav-right">
@@ -82,7 +83,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">5</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">2</span></a></li><li class="menu-item menu-item-理工"><a href="/%E7%90%86%E5%B7%A5/" rel="section"><i class="fa-solid fa-ruler-combined fa-fw"></i>理工</a></li><li class="menu-item menu-item-文学"><a href="/%E6%96%87%E5%AD%A6/" rel="section"><i class="fa-solid fa-arrow-down-a-z fa-fw"></i>文学</a></li><li class="menu-item menu-item-社科"><a href="/%E7%A4%BE%E7%A7%91/" rel="section"><i class="fa-solid fa-globe fa-fw"></i>社科</a></li>
   </ul>
 </nav>
 
@@ -99,6 +100,31 @@
   </div>
 
   <aside class="sidebar">
+
+  <!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=250 src="//music.163.com/outchain/player?type=0&id=7636445347&auto=0&height=430"></iframe>-->
+
+<!--网易云音乐插件-->
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://test1.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!-- require MetingJS-->
+<script src="https://test1.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script> 
+<!--网易云playlist外链地址-->   
+<meting-js
+    server="netease"
+    type="playlist" 
+    id="7636445347"
+    mini="false"
+    fixed="false"
+    list-folded="true"
+    autoplay="false"
+    volume="0.4"
+    theme="#FADFA3"
+    order="list"
+    loop="all"
+    preload="auto"
+    mutex="true">
+</meting-js>
 
     <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
@@ -118,6 +144,8 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="slchy"
+      src="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/web/avatar/avatar_runa.png">
   <p class="site-author-name" itemprop="name">slchy</p>
   <div class="site-description" itemprop="description">(*￣3￣)╭</div>
 </div>
@@ -125,12 +153,27 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
   </nav>
 </div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="mailto:213020167@scujcc.edu.cn" title="E-Mail → mailto:213020167@scujcc.edu.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
 
 
 
@@ -164,10 +207,141 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://sakura-kouji-runa.github.io/2022/09/14/%E5%BD%A2%E5%AE%B9%E8%AF%8D%E5%8F%98%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/web/avatar/avatar_runa.png">
+      <meta itemprop="name" content="slchy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="slchy_cyberspace">
+      <meta itemprop="description" content="(*￣3￣)╭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | slchy_cyberspace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/09/14/%E5%BD%A2%E5%AE%B9%E8%AF%8D%E5%8F%98%E5%8C%96/" class="post-title-link" itemprop="url">形容词变化</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-09-14 03:41:37 / 修改时间：04:19:13" itemprop="dateCreated datePublished" datetime="2022-09-14T03:41:37+08:00">2022-09-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E8%AF%AD%E8%AF%AD%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">日语语法</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="形容词变化">形容词变化<a class="anchor" href="#形容词变化">·</a></h1>
+<hr>
+<h2 id="汉字-い结尾">汉字 + い结尾<a class="anchor" href="#汉字-い结尾">·</a></h2>
+<h3 id="主要变化">主要变化<a class="anchor" href="#主要变化">·</a></h3>
+<blockquote>
+<ul>
+<li>adj い　+　名词　（不变）</li>
+<li>adj く　+　动词　（变为く）</li>
+<li>adj く　+ て + adj/形动（表并列）</li>
+<li>adj く　+　ない　（表否定）</li>
+<li>adj か　+　った　（表过去）</li>
+<li>adj け　+　れば　（表假定）</li>
+</ul>
+</blockquote>
+<h3 id="敬体变化">敬体变化<a class="anchor" href="#敬体变化">·</a></h3>
+<p><strong>adj い（音变） + ございます</strong></p>
+<ul>
+<li>あ段 + い</li>
+</ul>
+<blockquote>
+<p>お段 + う + ございます</p>
+<blockquote>
+<p>例:ありがたい　&gt;&gt;&gt;　ありがとうございます</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>い段 + い</li>
+</ul>
+<blockquote>
+<p>い段 尾音接 ゅ + う + ございます</p>
+<blockquote>
+<p>例:<ruby><rt></rt>美<rp>（</rp><rt>うつく</rt><rp>）</rp></ruby>しい　&gt;&gt;&gt;　美しゅうございます</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>う段 + い</li>
+</ul>
+<blockquote>
+<p>う段 + う + ございます</p>
+</blockquote>
+<ul>
+<li>え段没有形容词<br>
+ </li>
+<li>お段 + い</li>
+</ul>
+<blockquote>
+<p>お段 + う + ございます</p>
+</blockquote>
+</li>
+例：<ruby><rt></rt>素人<rp>（</rp><rt>しろうと</rt><rp>）</rp></ruby>&emsp;&emsp;<ruby><rt></rt>玄人<rp>（</rp><rt>くろうと</rt><rp>）</rp></ruby>&emsp;&emsp;<ruby><rt></rt>仲人<rp>（</rp><rt>なこうど</rt><rp>）</rp></ruby>&emsp;&emsp;<ruby><rt></rt>若人<rp>（</rp><rt>わこうど</rt><rp>）</rp></ruby>&emsp;&emsp;
+<hr>
+<h2 id="汉字-な结尾">汉字 + な结尾<a class="anchor" href="#汉字-な结尾">·</a></h2>
+<p>与名词变化保持一致</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://sakura-kouji-runa.github.io/2022/09/12/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/web/avatar/avatar_runa.png">
       <meta itemprop="name" content="slchy">
     </span>
 
@@ -192,9 +366,24 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-09-12 19:00:10 / 修改时间：21:59:39" itemprop="dateCreated datePublished" datetime="2022-09-12T19:00:10+08:00">2022-09-12</time>
+      <time title="创建时间：2022-09-12 19:00:10" itemprop="dateCreated datePublished" datetime="2022-09-12T19:00:10+08:00">2022-09-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-09-14 04:28:32" itemprop="dateModified" datetime="2022-09-14T04:28:32+08:00">2022-09-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%A6%96%E9%A1%B5/" itemprop="url" rel="index"><span itemprop="name">首页</span></a>
+        </span>
     </span>
 
   
@@ -208,19 +397,8 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>本博客用于上传本人平时全部学习笔记，以供日后复习。</p>
-<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><h3 id="信息"><a href="#信息" class="headerlink" title="信息"></a>信息</h3><ul>
-<li>数据结构</li>
-<li>数据库原理</li>
-<li>数字逻辑</li>
-<li>前端开发</li>
-</ul>
-<h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><h3 id="生物"><a href="#生物" class="headerlink" title="生物"></a>生物</h3><ul>
-<li>普通生物学</li>
-<li>生物信息学</li>
-</ul>
-<h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><ul>
-<li>日语</li>
-</ul>
+<hr>
+<p>本博客按内容进行分类索引索引页暂为为理工/文学/社科</p>
 
       
     </div>
@@ -255,15 +433,36 @@
   </span>
   <span class="author" itemprop="copyrightHolder">slchy</span>
 </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
     </div>
   </footer>
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
 
   
 
@@ -272,6 +471,7 @@
 
 
   
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
