@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://test1.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#39c5bb"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/web/avatar/web_ico_runa.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/web/avatar/web_ico_runa.ico">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yuki.su","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.0","exturl":false,"sidebar":{"position":"left","width":330,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="生物信息学· 声明：  本文档部分内容使用LLM辅助创作 本文档基于山东大学生物信息学课程 本文档链接均为GithubCopilot自动填充，未经校对   生物信息学研究什么· 生物信息学研究生物信息学 生物数据库及文献库·  pubmed 由NCBI维护的文献数据库，包含了生物学领域的大量文献，可以通过关键词搜索文献，也可以通过文献的PMID搜索文献。    一级核酸数据库  INSDC 国际核">
+<meta property="og:type" content="article">
+<meta property="og:title" content="生物信息学提纲">
+<meta property="og:url" content="https://yuki.su/2023/03/29/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E6%8F%90%E7%BA%B2/index.html">
+<meta property="og:site_name" content="slchy_cyberspace">
+<meta property="og:description" content="生物信息学· 声明：  本文档部分内容使用LLM辅助创作 本文档基于山东大学生物信息学课程 本文档链接均为GithubCopilot自动填充，未经校对   生物信息学研究什么· 生物信息学研究生物信息学 生物数据库及文献库·  pubmed 由NCBI维护的文献数据库，包含了生物学领域的大量文献，可以通过关键词搜索文献，也可以通过文献的PMID搜索文献。    一级核酸数据库  INSDC 国际核">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-29T14:02:48.000Z">
+<meta property="article:modified_time" content="2023-03-29T14:05:47.509Z">
+<meta property="article:author" content="slchy">
+<meta property="article:tag" content="提纲">
+<meta property="article:tag" content="生物信息学">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://yuki.su/2023/03/29/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E6%8F%90%E7%BA%B2/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://yuki.su/2023/03/29/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E6%8F%90%E7%BA%B2/","path":"2023/03/29/生物信息学提纲/","title":"生物信息学提纲"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>生物信息学提纲 | slchy_cyberspace</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">slchy_cyberspace</p>
+      <i class="logo-line"></i>
+    </a>
+      <img class="custom-logo-image" src="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/blog/title.jpg" alt="slchy_cyberspace">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">31</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">13</span></a></li><li class="menu-item menu-item-理工"><a href="/%E7%90%86%E5%B7%A5/" rel="section"><i class="fa-solid fa-ruler-combined fa-fw"></i>理工</a></li><li class="menu-item menu-item-文学"><a href="/%E6%96%87%E5%AD%A6/" rel="section"><i class="fa-solid fa-arrow-down-a-z fa-fw"></i>文学</a></li><li class="menu-item menu-item-社科"><a href="/%E7%A4%BE%E7%A7%91/" rel="section"><i class="fa-solid fa-globe fa-fw"></i>社科</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+  <!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=250 src="//music.163.com/outchain/player?type=0&id=7636445347&auto=0&height=430"></iframe>-->
+
+<!--网易云音乐插件-->
+<!-- require APlayer -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://test1.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<!-- require MetingJS-->
+<script src="https://test1.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script> 
+<!--网易云playlist外链地址-->   
+<meting-js
+    server="netease"
+    type="playlist" 
+    id="7636445347"
+    mini="false"
+    fixed="false"
+    list-folded="true"
+    autoplay="false"
+    volume="0.4"
+    theme="#FADFA3"
+    order="list"
+    loop="all"
+    preload="auto"
+    mutex="true">
+</meting-js>
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">生物信息学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E7%A0%94%E7%A9%B6%E4%BB%80%E4%B9%88"><span class="nav-number">1.1.</span> <span class="nav-text">生物信息学研究什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E7%89%A9%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8F%8A%E6%96%87%E7%8C%AE%E5%BA%93"><span class="nav-number">1.2.</span> <span class="nav-text">生物数据库及文献库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%8F%E5%88%97"><span class="nav-number">1.3.</span> <span class="nav-text">序列</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2%E8%AE%B0%E5%88%86%E7%9F%A9%E9%98%B5"><span class="nav-number">1.3.1.</span> <span class="nav-text">替换记分矩阵</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DNA%E8%AE%B0%E5%88%86%E7%9F%A9%E9%98%B5"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">DNA记分矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%9B%8B%E7%99%BD%E8%B4%A8%E8%AE%B0%E5%88%86%E7%9F%A9%E9%98%B5"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">蛋白质记分矩阵</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2%E4%B8%8E%E6%AF%94%E5%AF%B9"><span class="nav-number">1.3.2.</span> <span class="nav-text">搜索与比对</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9B%E5%8C%96"><span class="nav-number">1.4.</span> <span class="nav-text">进化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%81%87%E8%AE%BE"><span class="nav-number">1.4.1.</span> <span class="nav-text">基本假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E5%8F%91%E7%94%9F%E6%A0%91"><span class="nav-number">1.4.2.</span> <span class="nav-text">系统发生树</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%9B%8B%E7%99%BD%E8%B4%A8"><span class="nav-number">1.5.</span> <span class="nav-text">蛋白质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%AD%A6"><span class="nav-number">1.6.</span> <span class="nav-text">基因组学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%9F%E8%AE%A1%E6%96%B9%E6%B3%95-%E7%AE%97%E6%B3%95"><span class="nav-number">1.7.</span> <span class="nav-text">统计方法&#x2F;算法</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="slchy"
+      src="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/web/avatar/avatar_runa.png">
+  <p class="site-author-name" itemprop="name">slchy</p>
+  <div class="site-description" itemprop="description">(*￣3￣)╭</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">31</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="mailto:213020167@scujcc.edu.cn" title="E-Mail → mailto:213020167@scujcc.edu.cn" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="skype:live:.cid.87a28174da1608b5?call|chat" title="Skype → skype:live:.cid.87a28174da1608b5?call|chat" rel="noopener" target="_blank"><i class="fab fa-skype fa-fw"></i>Skype</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yuki.su/2023/03/29/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6%E6%8F%90%E7%BA%B2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/web/avatar/avatar_runa.png">
+      <meta itemprop="name" content="slchy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="slchy_cyberspace">
+      <meta itemprop="description" content="(*￣3￣)╭">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="生物信息学提纲 | slchy_cyberspace">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          生物信息学提纲
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-03-29 22:02:48 / 修改时间：22:05:47" itemprop="dateCreated datePublished" datetime="2023-03-29T22:02:48+08:00">2023-03-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">生物信息学</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="生物信息学">生物信息学<a class="anchor" href="#生物信息学">·</a></h1>
+<p>声明：<br></p>
+<ul>
+<li><em>本文档部分内容使用LLM辅助创作</em></li>
+<li><em>本文档基于<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV13t411372E">山东大学生物信息学</a>课程</em></li>
+<li><em>本文档链接均为GithubCopilot自动填充，未经校对</em></li>
+</ul>
+<hr>
+<h2 id="生物信息学研究什么">生物信息学研究什么<a class="anchor" href="#生物信息学研究什么">·</a></h2>
+<p>生物信息学研究<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6">生物信息学</a></p>
+<h2 id="生物数据库及文献库">生物数据库及文献库<a class="anchor" href="#生物数据库及文献库">·</a></h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/">pubmed</a>
+由NCBI维护的文献数据库，包含了生物学领域的大量文献，可以通过关键词搜索文献，也可以通过文献的PMID搜索文献。</li>
+</ul>
+<br>
+<ul>
+<li>一级核酸数据库
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/nuccore/?term=INSDC">INSDC</a>
+国际核酸序列数据库联盟，包括以下三个数据库：
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/genbank/">genbank</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ddbj.nig.ac.jp/index-e.html">DDBJ</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ebi.ac.uk/ena/browser/home">ENA</a></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://www.ensembl.org/index.html">ensemble</a>
+由EMBL-EBI维护基因组数据库。</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
+<br>
+<ul>
+<li>二级核酸数据库
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/refseq/">refseq</a>
+NCBI维护的核酸数据库。</li>
+<li><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/nuccore/?term=EST">dbEST</a>
+NCBI维护的EST数据库，包含了EST序列。</li>
+<li><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/gene/?term=human">gene数据库</a>
+NCBI维护的基因数据库，包含了基因的信息。</li>
+<li><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/nuccore/?term=ncRNA">ncRNA数据库</a>
+NCBI维护的非编码RNA数据库，包含了非编码RNA的信息。</li>
+<li><a target="_blank" rel="noopener" href="https://www.ncbi.nlm.nih.gov/nuccore/?term=miRNA">miRNA数据库</a>
+NCBI维护的mRNA数据库，包含了mRNA的信息。</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>一级蛋白质序列数据库
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="https://www.uniprot.org/">uniprot</a>
+由欧洲生物信息学联盟维护的蛋白质数据库，包含了蛋白质序列、蛋白质功能、蛋白质结构、蛋白质相互作用等信息。由swissprot和trembl以及pir组成。</p>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.uniprot.org/uniprot/?query=*&amp;fil=reviewed%3Ayes&amp;sort=score">swissprot</a>
+注释可信度高，冗余低的蛋白质序列数据库。</li>
+<li><a target="_blank" rel="noopener" href="https://www.uniprot.org/uniprot/?query=*&amp;fil=reviewed%3Ano&amp;sort=score">trembl</a>
+注释可信度低，冗余高的蛋白质序列数据库。</li>
+<li><a target="_blank" rel="noopener" href="https://pir.georgetown.edu/">pir</a></li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>uniprot</p>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.uniprot.org/">uniprotkb</a>
+uniprot有详细注释并与其他数据库相互链接的数据库。</li>
+<li><a target="_blank" rel="noopener" href="https://www.uniprot.org/uniparc/?query=*&amp;sort=score">uniparc</a>
+uniprot的核心数据库，包含了uniprot的所有信息。</li>
+<li><a target="_blank" rel="noopener" href="https://www.uniprot.org/uniref/?query=*&amp;sort=score">uniref</a>
+uniprot归纳并将重复序列去除后的数据库。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>一级蛋白质结构（氨基酸序列）数据库
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.rcsb.org/">pdb</a>
+由结构生物信息学合作研究协会维护的蛋白质结构数据库，包含了蛋白质结构的信息。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<br>
+<ul>
+<li>二级蛋白质结构（周期性结构）数据库
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://pfam.xfam.org/">pfam</a>
+由欧洲生物信息研究所维护的结构数据库，包含了蛋白质结构域的信息。</li>
+<li><a target="_blank" rel="noopener" href="https://www.cathdb.info/">cath</a>
+由伦敦大学维护的周期性结构数据库。</li>
+<li><a target="_blank" rel="noopener" href="http://scop.berkeley.edu/">scop</a>
+由英国医学研究委员会维护的周期性结构数据库。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<br>
+<ul>
+<li>四级蛋白质结构（相互作用）数据库
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://dip.doe-mbi.ucla.edu/dip/">dip</a>
+实验方法测定的蛋白质相互作用数据库。</li>
+<li><a target="_blank" rel="noopener" href="https://thebiogrid.org/">bioGRID</a>
+收集模式生物物种中涉及的蛋白质相互作用数据，作数据集。</li>
+<li><a target="_blank" rel="noopener" href="https://string-db.org/">STRING</a>
+实验及计算方法测定的蛋白质相互作用数据库。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<br>
+<ul>
+<li>专用数据库
+<blockquote>
+<ul>
+<li><strong><a target="_blank" rel="noopener" href="https://www.genome.jp/kegg/">KEGG</a></strong>
+由日本生物信息学研究所维护的生物学数据库，包含了生物学相关的信息。</li>
+<li><a target="_blank" rel="noopener" href="https://www.omim.org/">omim</a>
+由美国国家遗传学中心维护的遗传病数据库，包含了遗传病的信息。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<br>
+<hr>
+<h2 id="序列">序列<a class="anchor" href="#序列">·</a></h2>
+<h3 id="替换记分矩阵">替换记分矩阵<a class="anchor" href="#替换记分矩阵">·</a></h3>
+<p>替换记分矩阵描述了序列中字符的替换概率，常用于比较序列相似性，是序列比对的关键部分。</p>
+<br>
+<h4 id="DNA记分矩阵">DNA记分矩阵<a class="anchor" href="#DNA记分矩阵">·</a></h4>
+<ul>
+<li><strong>等价矩阵</strong>
+一致记1分，不一致记0分。</li>
+<li><strong>转换-颠倒矩阵</strong>
+转换记-1分，颠倒记-5分。</li>
+<li><strong>BLAST矩阵</strong>
+一致记5分，不一致记-4分。由大量比对得出的经验结果。</li>
+</ul>
+<br>
+<h4 id="蛋白质记分矩阵">蛋白质记分矩阵<a class="anchor" href="#蛋白质记分矩阵">·</a></h4>
+<ul>
+<li><strong>等价矩阵</strong>
+<blockquote>
+<p>一致记1分，不一致记0分。</p>
+</blockquote>
+</li>
+<li><strong>PAM矩阵</strong>
+<blockquote>
+<p>表示在蛋白质进化中的氨基酸替换频率。PAM-1反应了进化产生的每100个平均发生1个突变的量值。PAM-n由PAM-1自乘得出。</p>
+</blockquote>
+</li>
+<li><strong>BLOSUM矩阵</strong>
+<blockquote>
+<p>BLOSUM矩阵基于比对蛋白质序列的实际数据，反映了相对保守和变异的氨基酸替换频率。BLOSUM-n，n代表该矩阵是由一致度大于等于n%的序列计算得出。</p>
+</blockquote>
+</li>
+<li><strong>遗传密码矩阵</strong>
+<blockquote>
+<p>分值大小由不同氨基酸间密码子变化的多少来决定。</p>
+</blockquote>
+</li>
+<li><strong>疏水矩阵</strong>
+<blockquote>
+<p>分值大小由氨基酸替换后疏水性变化的多少来决定。</p>
+</blockquote>
+</li>
+</ul>
+<br>
+<p>相似度计算：<br></p>
+<ul>
+<li>
+<p>打点法</p>
+</li>
+<li>
+<p>序列比对（alignment）法
+gap分为gap open和gap extend</p>
+<ul>
+<li>needleman-wunsch算法
+<code>s(0,0) = 0; </code><br>
+<code>s(0,j) = gap * j;</code><br>
+<code>s(i,0) = gap * i;</code><br>
+<code>s(i,j) = max( (s(i-1,j-1) + w(i,j)),(s(i-1,j) + gap),(s(i,j-1) + gap) );</code></li>
+<li>局部比对算法
+<code>s(0,0) = 0; </code><br>
+<code>s(0,j) = gap * j;</code><br>
+<code>s(i,0) = gap * i;</code><br>
+<code>s(i,j) = max(0,(s(i-1,j-1) + w(i,j)),(s(i-1,j) + gap),(s(i,j-1) + gap) );</code></li>
+</ul>
+</li>
+</ul>
+<br>
+<h3 id="搜索与比对">搜索与比对<a class="anchor" href="#搜索与比对">·</a></h3>
+<p>对比工具：<br></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.tcoffee.org/Projects/tcoffee/index.html">Tcoffee</a>
+tcoffee是一个多序列比对工具,特点是可以结合结构信息进行比对。</li>
+<li><a target="_blank" rel="noopener" href="http://www.clustal.org/omega/">Clustal</a>
+常用的多序列比对工具。</li>
+<li><a target="_blank" rel="noopener" href="https://www.ebi.ac.uk/Tools/msa/muscle/">Muscle</a>
+快速的多序列比对工具。</li>
+</ul>
+<p>结果格式及转换工具：<br></p>
+<ul>
+<li>
+<p>fasta</p>
+</li>
+<li>
+<p>clustalw</p>
+</li>
+<li>
+<p>score</p>
+</li>
+<li>
+<p>phylip</p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="http://www.bioinformatics.nl/cgi-bin/fmtseq/fmtseq.pl">fmtseq</a></p>
+</li>
+</ul>
+<p>比对编辑工具：<br></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.jalview.org/">jalview</a>
+JAVA,可以嵌入到网页中。</li>
+<li><a target="_blank" rel="noopener" href="http://www.ch.embnet.org/software/BOX_form.html">boxshade</a>
+擅长黑白作图。</li>
+<li><a target="_blank" rel="noopener" href="http://www.ch.embnet.org/software/ESPript_form.html">espript</a>
+功能强大。</li>
+<li><a target="_blank" rel="noopener" href="https://ormbunkar.se/aliview/">aliview</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.ebi.ac.uk/Tools/msa/mview/">mview</a>
+将比对结果转换成html格式。</li>
+</ul>
+<br>
+<p>Blast搜索<br></p>
+<ul>
+<li><strong>BLASTn</strong>
+<blockquote>
+<p>用核酸序列在核酸数据库中搜索</p>
+</blockquote>
+</li>
+<li><strong>BLASTp</strong>
+<blockquote>
+<p>用蛋白序列在蛋白数据库中搜索</p>
+</blockquote>
+</li>
+<li><strong>BLASTx</strong>
+<blockquote>
+<p>用核酸序列对应的蛋白在蛋白数据库中搜索</p>
+</blockquote>
+</li>
+<li><strong>tBLASTn</strong>
+<blockquote>
+<p>通过将<strong>蛋白质</strong>序列<strong>翻译</strong>成所有可能的<strong>核酸</strong>序列（包括六种读框和反向互补链），然后在<strong>核酸数据库</strong>中进行<strong>比对</strong>，以找到与该<strong>蛋白质</strong>序列相似的<strong>核酸</strong>序列。</p>
+</blockquote>
+</li>
+<li><strong>tBLASTx</strong>
+<blockquote>
+<p>核酸序列对核酸序列数据库的搜索方法。将被检索的<strong>核酸序列</strong>和<strong>核酸序列数据库</strong>中的序列按不同的阅读方法<strong>全部翻译</strong>成<strong>蛋白质</strong>序列，然后对两者的<strong>蛋白质序列</strong>进行<strong>比对</strong>。<em>与BLASTx不同的是，tBLASTx比对的是三种核酸序列翻译成的六种可能的蛋白质序列与另一组核酸序列的六种可能的翻译后的蛋白质序列之间的相似性。</em></p>
+</blockquote>
+</li>
+<li><strong>PSI-BLAST</strong>
+<blockquote>
+<p>每次用Position-specific scoring matrix搜索数据库后将结果重构PSSM再次搜索，反复直至穷尽。</p>
+</blockquote>
+</li>
+<li><strong>PHI-BLAST</strong>
+<blockquote>
+<p>找出于序列相似并符合某种模式的序列</p>
+</blockquote>
+</li>
+</ul>
+<br>
+<p>多序列比对：<br></p>
+<ul>
+<li><a href="weblogo.threeplusone.com/create.cgi">序列标识图</a>以序列的位点为横坐标，以序列的相似性为纵坐标，将序列的相似性用颜色绘制。</li>
+</ul>
+<br>
+<ul>
+<li>用途
+<ul>
+<li><strong>确认</strong>一个序列是否属于某家族</li>
+<li><strong>建立</strong>系统发生树</li>
+<li><strong>识别</strong>保守片段</li>
+<li><strong>推断</strong>未知序列</li>
+<li><strong>预测</strong>蛋白质/RNA二级结构</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>保守片段
+<blockquote>
+<p>保守片段是指在多个<strong>序列</strong>中<strong>都存在</strong>的片段，这些序列可能是<strong>同源</strong>的，也可能是同源的<strong>同源物</strong>。保守片段的长度一般比较<strong>短</strong>，一般在10-100个氨基酸之间。保守片段的长度与序列的相似性成正比，即<strong>相似性越高</strong>，保守片段的<strong>长度越长</strong>。</p>
+</blockquote>
+</li>
+</ul>
+<br>
+<ul>
+<li>保守片段的识别
+<ul>
+<li><strong>基序</strong>
+具有特定模式的序列片段，使用<a target="_blank" rel="noopener" href="http://meme-suite.org/tools/meme">meme</a>识别基序。</li>
+<li><strong>指纹</strong>
+保守的序列基序，刻画蛋白质家族的特征，<a target="_blank" rel="noopener" href="http://www.bioinf.manchester.ac.uk/dbbrowser/PRINTS/">prints</a>数据库是指纹数据库。</li>
+</ul>
+</li>
+</ul>
+<br>
+<hr>
+<h2 id="进化">进化<a class="anchor" href="#进化">·</a></h2>
+<h3 id="基本假设">基本假设<a class="anchor" href="#基本假设">·</a></h3>
+<ul>
+<li>DNA,RNA,蛋白质序列包含了物种所有的进化史信息</li>
+<li>一个特定的蛋白质的进化变异速度是相对稳定的</li>
+</ul>
+<br>
+<ul>
+<li>同源
+<ul>
+<li>直系同源（ortholog）
+<blockquote>
+<p>来自不同物种的，由垂直家系进化的基因。保留原始功能。</p>
+</blockquote>
+</li>
+<li>旁系同源（paralog）
+<blockquote>
+<p>来自相同物种的，由基因复制产生的基因。可能发生变异。</p>
+</blockquote>
+</li>
+<li>异同源（xenolog）
+<blockquote>
+<p>通过水平基因转移（基因没有转移给子代，而是传递给其他）所获基因，源自病毒侵染等所产生的相似基因。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<h3 id="系统发生树">系统发生树<a class="anchor" href="#系统发生树">·</a></h3>
+<p>具有共同祖先的各物种间演化关系的树<br></p>
+<p>建树原则：<br></p>
+<ul>
+<li>DNA序列两两一致度大于70%，选择DNA序列建树</li>
+<li>DNA序列两两一致度小于70%，选择任意序列建树</li>
+</ul>
+<p>意义：<br></p>
+<blockquote>
+<ul>
+<li>确定未知基因及蛋白质的亲缘关系</li>
+<li>预测未知基因及蛋白质的功能</li>
+<li>预测一个分子功能的走势</li>
+<li>追溯基因的起源</li>
+</ul>
+</blockquote>
+<p>结构：<br></p>
+<blockquote>
+<ul>
+<li>根（根节点）代表最早的共同祖先</li>
+<li>节（内节点）曾经出现过的物种</li>
+<li>叶（外节点）当前存在的物种</li>
+</ul>
+</blockquote>
+<p><strong>无根树</strong>(只<strong>反映</strong>单元之间的<strong>距离</strong>，<strong>不反应祖先</strong>问题)区分出<strong>外类群</strong>(研究对象之外的对象群)后变为<strong>有根树</strong>(反应进化<strong>关系</strong>及进化<strong>速率</strong>)</p>
+<br>
+<p>构建工具：<br></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.megasoftware.net/">Mega</a>
+图形化，集成。</li>
+<li><a target="_blank" rel="noopener" href="http://evolution.genetics.washington.edu/phylip.html">PHYLIP</a>
+免费，集成。</li>
+<li><a target="_blank" rel="noopener" href="http://phylosolutions.com/paup-test/">PAUP</a>
+收费，集成。</li>
+<li><a target="_blank" rel="noopener" href="http://www.atgc-montpellier.fr/phyml/">PHYML</a>
+最快的ML工具。</li>
+<li><a target="_blank" rel="noopener" href="http://mrbayes.sourceforge.net/">MrBayes</a></li>
+</ul>
+<br>
+<p>构建方法：<br></p>
+<ul>
+<li>基于距离的方法（Neighbour_Joining,Unweighted_Pair_Group_Method_with_Arithmetic_Mean）
+<blockquote>
+<p>UPGMA通过计算每两个序列的平均距离，然后将距离最近的两个序列合并，直至所有序列合并为一棵树。</p>
+</blockquote>
+</li>
+</ul>
+<br>
+<ul>
+<li>最大简约法（Maximum_Parsimony）
+<blockquote>
+<p>选择最简单的树，即最少的分支变化，最少的分支数。</p>
+</blockquote>
+</li>
+</ul>
+<br>
+<ul>
+<li>最大似然法（Maximum_Likelihood）
+<blockquote>
+<p>选择最可能的树，即最大化树的似然值。</p>
+</blockquote>
+</li>
+</ul>
+<br>
+<ul>
+<li>贝叶斯推断法（Bayesian_Inference）</li>
+</ul>
+<br>
+<hr>
+<h2 id="蛋白质">蛋白质<a class="anchor" href="#蛋白质">·</a></h2>
+<ul>
+<li>一级结构氨基酸序列。</li>
+</ul>
+<br>
+<ul>
+<li>二级结构
+<a target="_blank" rel="noopener" href="http://swift.cmbi.ru.nl/gv/dssp/">dssp</a>是根据已经测定的蛋白质三维结构，对蛋白质二级结构进行指认的数据库。<br>周期性结构构象。
+<ul>
+<li>螺旋（helix）
+<blockquote>
+<ul>
+<li><strong>【H】α折叠</strong></li>
+<li>【G】3-10_helix</li>
+<li>【I】π-helix</li>
+</ul>
+</blockquote>
+</li>
+<li>β折叠（β-sheet）
+<blockquote>
+<ul>
+<li><strong>【E】β折片</strong>（β-strand）平行排列而成</li>
+<li>【B】reside_in_isolated_β-bridge</li>
+</ul>
+</blockquote>
+</li>
+<li>β转角肽链大于90°的转角
+<blockquote>
+<ul>
+<li>【S】hydrogen_bonded_turn</li>
+<li>【T】bend</li>
+</ul>
+</blockquote>
+</li>
+<li>无规卷曲（coil）</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>三级结构多肽链的三维结构。<br>
+<a target="_blank" rel="noopener" href="https://www.alphafold.ebi.ac.uk/">alphafold</a>数据库，三级结构可视化软件<a target="_blank" rel="noopener" href="http://www.ks.uiuc.edu/Research/vmd/">vmd</a>。
+<ul>
+<li>计算方法预测三级结构
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://swissmodel.expasy.org/">SWISS-MODEL</a>
+同源建模法，通过已知的同源蛋白质三级结构，预测未知蛋白质的三级结构。</li>
+<li><a target="_blank" rel="noopener" href="http://zhanglab.ccmb.med.umich.edu/I-TASSER/">I-TASSER</a>
+穿线法，将要预测的序列与现有的拓扑结构进行匹配，找出能量最低的结构作为结果。</li>
+<li><a target="_blank" rel="noopener" href="http://zhanglab.ccmb.med.umich.edu/QUARK/">QUARK</a>
+从头计算法，能量最低原理。</li>
+<li><a target="_blank" rel="noopener" href="https://robetta.bakerlab.org/">Robetta</a>
+预测的序列，其中找得到模板的片段，使用同源建模法。找不到的，从头计算。</li>
+</ul>
+</blockquote>
+</li>
+<li>质量评估
+<blockquote>
+<ul>
+<li>ramachandran图</li>
+<li>proQ</li>
+<li>modfold</li>
+</ul>
+</blockquote>
+</li>
+<li>比对
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://zhanglab.ccmb.med.umich.edu/SUPERPOSE/">superpose</a>
+三维结构比对，计算两个蛋白质的RMSD。</li>
+<li><a target="_blank" rel="noopener" href="http://zhanglab.ccmb.med.umich.edu/SPDBV/">spdbv</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>四级结构亚基团的结构。<br>分子对接（docking）：
+<ul>
+<li>
+<p>蛋白质-蛋白质 分子对接</p>
+<blockquote>
+<p>考虑<strong>形状互补</strong>，<strong>亲疏水性</strong>，<strong>表面电荷分布</strong>。有<strong>rigid_docking</strong>和<strong>flexible_docking</strong>。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://zdock.umassmed.edu/">zdock</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.gramm-x.org/">gramm-x</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ebi.ac.uk/pdbe/pisa/">PDBePISA</a>
+相互作用分析。</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>蛋白质-小分子 分子对接</p>
+<blockquote>
+<p>有<strong>rigid_docking</strong>和<strong>flexible_docking</strong>，小分子总是flexible。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://autodock.scripps.edu/">autodock</a></li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>虚拟筛选即计算机筛选可以与蛋白质对接的小分子，以提高效率。</p>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zinc.docking.org/">zinc</a>
+小分子数据库</li>
+<li><a target="_blank" rel="noopener" href="http://vina.scripps.edu/">vina</a></li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>反向对接计算机筛选可以与小分子对接的蛋白质</p>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://bioinfo.life.hust.edu.cn/scPDB/">scPDB</a>
+蛋白质靶标数据库</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>蛋白质分子的表面性质
+<ul>
+<li>表面形状(surface)</li>
+<li>表面电荷分布
+<a target="_blank" rel="noopener" href="http://www.poissonboltzmann.org/apbs/">apbs</a></li>
+<li>表面残基可溶性
+<a target="_blank" rel="noopener" href="http://www.poissonboltzmann.org/apbs/">apbs</a></li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>分子动力学（MD）模拟
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.gromacs.org/">gromacs</a></li>
+<li><a target="_blank" rel="noopener" href="https://ambermd.org/">amber</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ks.uiuc.edu/Research/namd/">namd</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.charmm.org/">charmm</a></li>
+</ul>
+</li>
+</ul>
+<br>
+<hr>
+<h2 id="基因组学">基因组学<a class="anchor" href="#基因组学">·</a></h2>
+<ul>
+<li>测序
+<ul>
+<li>sanger_sequencing</li>
+<li>high_throughput_sequencing</li>
+</ul>
+</li>
+</ul>
+<p>听得有点懵，学了分子生物学再说。</p>
+<br>
+<hr>
+<h2 id="统计方法-算法">统计方法/算法<a class="anchor" href="#统计方法-算法">·</a></h2>
+<p>贝叶斯公式</p>
+<ul>
+<li>P(A|B) = P(B|A)P(A)/P(B)
+一般情况下
+<ul>
+<li>P(Ai|B) = P(B|Ai)P(Ai)/ΣP(B|Aj)P(Aj)</li>
+</ul>
+</li>
+</ul>
+<p>二元预测</p>
+<ul>
+<li>sensitivity = TP/(TP+FN)</li>
+<li>specificity = TN/(TN+FP)</li>
+</ul>
+<br>
+<p>简单算法</p>
+<ul>
+<li>后缀树</li>
+<li>最高分子序列</li>
+</ul>
+<p>机器学习</p>
+<blockquote>
+<ul>
+<li>分类（classification）有背景知识，根据背景知识，预测未知的类别。</li>
+<li>聚类（clustering）没有背景知识，对一组新物体，判断属性并分组。</li>
+<li>回归（regression）有背景知识，根据背景知识，推导出Xn与Y的关系，计算新物体的Y。</li>
+<li>k次交叉验证（k-fold cross validation）将数据集分为k份，每次用k-1份训练，1份测试，重复k次，取平均值。</li>
+</ul>
+</blockquote>
+<br>
+<p>机器学习算法</p>
+<ul>
+<li>决策树（decision tree）</li>
+<li>支持向量机（support vector machine）</li>
+</ul>
+<br>
+<p><a target="_blank" rel="noopener" href="https://www.cs.waikato.ac.nz/ml/weka/">Weka</a></p>
+<ul>
+<li>数据挖掘</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%8F%90%E7%BA%B2/" rel="tag"># 提纲</a>
+              <a href="/tags/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/" rel="tag"># 生物信息学</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/11/25/%E6%84%9F%E8%A7%89%E5%99%A8%E5%AE%98%E5%92%8C%E7%9F%A5%E8%A7%89/" rel="prev" title="感觉器官和知觉">
+                  <i class="fa fa-chevron-left"></i> 感觉器官和知觉
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">SLCHY | CC BY-NC-SA</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+
+
+
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
