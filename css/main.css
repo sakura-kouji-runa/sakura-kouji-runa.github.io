@@ -2691,7 +2691,7 @@ mjx-container[display='true'] + br {
   }
 }
 body {
-  background-image: url("https://test1.jsdelivr.net/gh/sakurakouji-luna/pic@main/blog/blog_wallpaper.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/sakurakouji-luna/pic@main/blog/blog_wallpaper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
