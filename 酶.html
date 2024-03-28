@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/sakurakouji-luna/pic@main/bio/BioChemistry/Protein/%E8%83%B0%E8%9B%8B%E7%99%BD%E9%85%B6%E5%8E%9F%E7%9A%84%E8%BD%AC%E5%8C%96.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/sakurakouji-luna/pic@main/bio/BioChemistry/Protein/%E5%8A%A8%E5%91%98%E7%B3%96%E5%8E%9F.png">
 <meta property="article:published_time" content="2024-03-28T05:04:08.000Z">
-<meta property="article:modified_time" content="2024-03-28T10:23:39.637Z">
+<meta property="article:modified_time" content="2024-03-28T10:38:45.710Z">
 <meta property="article:author" content="slchy">
 <meta property="article:tag" content="静态生物化学">
 <meta property="article:tag" content="酶">
@@ -255,7 +255,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-03-28 13:04:08 / 修改时间：18:23:39" itemprop="dateCreated datePublished" datetime="2024-03-28T13:04:08+08:00">2024-03-28</time>
+      <time title="创建时间：2024-03-28 13:04:08 / 修改时间：18:38:45" itemprop="dateCreated datePublished" datetime="2024-03-28T13:04:08+08:00">2024-03-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -385,9 +385,10 @@
 </blockquote>
 </li>
 <li>连接酶类
-<blockquote>
-<p>$\ce{A + B + ATP -&gt;[酶] AB + ADP + Pi}$<br>$\ce{A + B + ATP -&gt;[酶] AB + AMP + PPi}$<br><img src="" alt="待补充"></p>
-</blockquote>
+<ul>
+<li>$\ce{A + B + ATP -&gt;[酶] AB + ADP + Pi}$<br></li>
+<li>$\ce{A + B + ATP -&gt;[酶] AB + AMP + PPi}$<br><img src="" alt="待补充"></li>
+</ul>
 </li>
 </ol>
 </li>
@@ -524,23 +525,78 @@
 <p>Briggs-Haldane 提出稳态理论：<br><strong>$\ce{S + E &lt;=&gt;[K_1][K_2] SE &lt;=&gt;[K_3][K_4] P + E }$</strong><br>推倒：<br></p>
 <p>ES浓度变化速度：$\frac{d[ES]}{dt}$</p>
 <br>
-<p>在反应初期，K<sub>4</sub> ～ 0，<br>此时 $\frac{d[ES]}{dt}$ 为 $ K_1 ( [E] - [ES] ) \cdot [S]$ <br> 此时 $-\frac{d[ES]}{dt}$ 为 $ K_2 \cdot [ES] + K_3  \cdot[ES] \textcircled{2}$</p>
-<br>
-<p>在稳态下：  $ K_1 ( [E] - [ES] ) \cdot [S] = K_2 \cdot [ES] + K_3  \cdot[ES] $</p>
-<br>
-<p>即：$\frac{k_2 + k_3}{k_1} = \frac{( [E] - [ES] ) \cdot [S]}{[ES]} \textcircled{3} , 令K_m = \frac{k_2 + k_3}{k_1}$<br>可得：$[ES] = \frac{[E] \cdot [S]}{K_m + [S]}\textcircled{4}$</p>
-<br>
-<p>又 V = K<sub>3</sub> [ES]，<br>可得：$V = K_3 \cdot \frac{[E] \cdot [S]}{K_m + [S]}$</p>
-<br>
-<p>当 [S] &gt;&gt; [E] 时， 有 [E] = [ES]，那么 $V_{max} = K_3 \cdot [E]\textcircled{7}$</p>
-<br>
-<p>此时有：<strong>$V = \frac{V_{max} \cdot [S]}{K_m + [S]}$</strong>（米氏方程）</p>
-<br>
-<p>所以：<br>K<sub>m</sub> &gt;&gt; [S] 时，V = $\frac{V_{max} \cdot [S]}{K_m}$<br>K<sub>m</sub> &lt;&lt; [S] 时，V = V<sub>max</sub><br>K<sub>m</sub> = [S] 时，V = $\frac{V_{max}}{2}$<br>我们称K<sub>m</sub>为米氏常数（mol/L）<br></p>
 <ul>
-<li>$\textcircled{2}$ 可以判定酶的专一性和天然底物</li>
-<li>$\textcircled{3}$ 可以计算V<sub>max</sub>和V间的关系</li>
-<li>$\textcircled{7}$ 可以判定反应方向与途径</li>
+<li>在反应初期，
+<ul>
+<li>K<sub>4</sub> ～ 0，<br>此时 $\frac{d[ES]}{dt}$ 为 $ K_1 ( [E] - [ES] ) \cdot [S]$ <br></li>
+<li>此时 $-\frac{d[ES]}{dt}$ 为 $ K_2 \cdot [ES] + K_3  \cdot[ES] \textcircled{2}$</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>在稳态下：
+<ul>
+<li>$ K_1 ( [E] - [ES] ) \cdot [S] = K_2 \cdot [ES] + K_3  \cdot[ES] $</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>即：
+<ul>
+<li>$\frac{k_2 + k_3}{k_1} = \frac{( [E] - [ES] ) \cdot [S]}{[ES]} \textcircled{3} , $</li>
+<li>令：$K_m = \frac{k_2 + k_3}{k_1}$<br></li>
+<li>可得：$[ES] = \frac{[E] \cdot [S]}{K_m + [S]}\textcircled{4}$</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>又：
+<ul>
+<li>V = K<sub>3</sub> [ES]，<br></li>
+<li>可得：$V = K_3 \cdot \frac{[E] \cdot [S]}{K_m + [S]}$</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>当：
+<ul>
+<li>[S] &gt;&gt; [E] 时， 有 [E] = [ES]，</li>
+<li>那么 $V_{max} = K_3 \cdot [E]\textcircled{7}$</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>此时有：
+<ul>
+<li><strong>$V = \frac{V_{max} \cdot [S]}{K_m + [S]}$</strong>（米氏方程）</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<p>所以：</p>
+<ul>
+<li>K<sub>m</sub> &gt;&gt; [S] 时，V = $\frac{V_{max} \cdot [S]}{K_m}$<br></li>
+<li>K<sub>m</sub> &lt;&lt; [S] 时，V = V<sub>max</sub><br></li>
+<li>K<sub>m</sub> = [S] 时，V = $\frac{V_{max}}{2}$<br></li>
+<li>我们称K<sub>m</sub>为米氏常数（mol/L）<br></li>
+</ul>
+</li>
+<li>
+<p>$\textcircled{2}$ 可以判定酶的专一性和天然底物</p>
+</li>
+<li>
+<p>$\textcircled{3}$ 可以计算V<sub>max</sub>和V间的关系</p>
+</li>
+<li>
+<p>$\textcircled{7}$ 可以判定反应方向与途径</p>
+</li>
 </ul>
 <br>
 <ul>
@@ -656,19 +712,19 @@ K<sub>cat</sub>型抑制剂 也是 酶的底物，在酶的催化下会使酶自
 K<sub>i</sub> 是 抑制剂常数
 <ul>
 <li>竞争性抑制
-<blockquote>
-<p>$V = \frac{V_{max}[S]}{K_m (1 + \frac{[I]}{K_i})+ [S]}$<br>双倒数式：<br>$\frac{1}{V} = \frac{K_m}{K_{max}}(1 + \frac{[I]}{K_i}) \cdot \frac{1}{[S]} + \frac{1}{V_{max}}$</p>
-</blockquote>
+<ul>
+<li>$V = \frac{V_{max}[S]}{K_m (1 + \frac{[I]}{K_i})+ [S]}$<br>双倒数式：<br>$\frac{1}{V} = \frac{K_m}{K_{max}}(1 + \frac{[I]}{K_i}) \cdot \frac{1}{[S]} + \frac{1}{V_{max}}$</li>
+</ul>
 </li>
 <li>非竞争性抑制
-<blockquote>
-<p>$V = \frac{V_{max}[S]}{(K_m + [S])(1 + \frac{[I]}{K_i})}$<br>双倒数式：<br>$\frac{1}{V} = \frac{K_m}{K_{max}} (1 + \frac{[I]}{k_i})\frac{1}{[S]} + \frac{1}{V_{max}}(1 + \frac{[I]}{K_i})$</p>
-</blockquote>
+<ul>
+<li>$V = \frac{V_{max}[S]}{(K_m + [S])(1 + \frac{[I]}{K_i})}$<br>双倒数式：<br>$\frac{1}{V} = \frac{K_m}{K_{max}} (1 + \frac{[I]}{k_i})\frac{1}{[S]} + \frac{1}{V_{max}}(1 + \frac{[I]}{K_i})$</li>
+</ul>
 </li>
 <li>反竞争性抑制
-<blockquote>
-<p>$V = \frac{V_{max}[S]}{K_m + [S] \cdot (1 + \frac{[I]}{K_i})}$ <br>双倒数式：<br>$\frac{1}{V} = \frac{K_m}{K_{max}} \frac{1}{[S]} + \frac{1}{V_{max}}(1 + \frac{[I]}{K_i})$</p>
-</blockquote>
+<ul>
+<li>$V = \frac{V_{max}[S]}{K_m + [S] \cdot (1 + \frac{[I]}{K_i})}$ <br>双倒数式：<br>$\frac{1}{V} = \frac{K_m}{K_{max}} \frac{1}{[S]} + \frac{1}{V_{max}}(1 + \frac{[I]}{K_i})$</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -969,9 +1025,11 @@ $\ce{ 酶原 -&gt;[水解酶][不可逆] 酶 }$<br> 胰蛋白酶原的转化：<
 <ul>
 <li>
 <p>磷酸化修饰（重点）</p>
+<ul>
+<li>$\ce{ 蛋白质 &lt;=&gt;[ ATP -&gt; ADP 蛋白激酶 ][ nPi &lt;- H_2O 蛋白磷酸酶 ] 蛋白质-nP }$</li>
+</ul>
 <blockquote>
-<p>$\ce{ 蛋白质 &lt;=&gt;[ ATP -&gt; ADP 蛋白激酶 ][ nPi &lt;- H_2O 蛋白磷酸酶 ] 蛋白质-nP }$
-两类蛋白激酶：</p>
+<p>两类蛋白激酶：</p>
 <ol>
 <li>Ser/Thr羟基蛋白激酶</li>
 <li>Tyr羟基磷酸化蛋白激酶</li>
