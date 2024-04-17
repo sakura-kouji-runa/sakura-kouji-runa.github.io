@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yuki.su/%E7%90%86%E5%B7%A5/index.html</loc>
+    
+    <lastmod>2024-04-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yuki.su/%E6%A0%B8%E9%85%B8%E9%99%8D%E8%A7%A3%E4%B8%8E%E6%A0%B8%E8%8B%B7%E9%85%B8%E4%BB%A3%E8%B0%A2.html</loc>
     
     <lastmod>2024-04-17</lastmod>
@@ -14,15 +23,6 @@
     <loc>https://yuki.su/%E8%9B%8B%E7%99%BD%E8%B4%A8%E9%99%8D%E8%A7%A3%E4%B8%8E%E6%B0%A8%E5%9F%BA%E9%85%B8%E4%BB%A3%E8%B0%A2.html</loc>
     
     <lastmod>2024-04-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yuki.su/%E7%90%86%E5%B7%A5/index.html</loc>
-    
-    <lastmod>2024-04-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -584,6 +584,20 @@
   </url>
   
   <url>
+    <loc>https://yuki.su/tags/%E6%A0%B8%E9%85%B8%E9%99%8D%E8%A7%A3/</loc>
+    <lastmod>2024-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yuki.su/tags/%E6%A0%B8%E8%8B%B7%E9%85%B8%E4%BB%A3%E8%B0%A2/</loc>
+    <lastmod>2024-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://yuki.su/tags/%E5%91%BC%E5%90%B8/</loc>
     <lastmod>2024-04-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -844,20 +858,6 @@
   
   <url>
     <loc>https://yuki.su/tags/%E9%AA%A8%E9%AA%BC/</loc>
-    <lastmod>2024-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yuki.su/tags/%E6%A0%B8%E9%85%B8%E9%99%8D%E8%A7%A3/</loc>
-    <lastmod>2024-04-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yuki.su/tags/%E6%A0%B8%E8%8B%B7%E9%85%B8%E4%BB%A3%E8%B0%A2/</loc>
     <lastmod>2024-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
